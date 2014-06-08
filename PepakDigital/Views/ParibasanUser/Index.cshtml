@@ -1,0 +1,45 @@
+﻿@model IEnumerable<PepakDigital.Paribasan>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+
+<div class="col-md-6">
+		  <div class="panel panel-default">
+					  <div class="panel-heading"><h4>PARIBASAN</h4></div>
+						<div class="panel-body">
+							<table class="table table-striped">
+<thead>
+
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IsiParibasan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Artine)
+        </th>
+       
+        <th></th>
+    </tr>
+    </thead>
+
+<tbody>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsiParibasan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Artine)
+        </td>
+        
+      
+    </tr>
+}
+
+                                    	</tbody>
+							</table>
+						</div><!--/panel-body-->
+           </div><!--/panel-->

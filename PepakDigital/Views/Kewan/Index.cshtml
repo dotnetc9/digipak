@@ -1,0 +1,46 @@
+﻿@model IEnumerable<PepakDigital.Kewan>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h2>Kewan</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.JenengKewan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AnakeKewan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Kategori.Jenis)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.JenengKewan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AnakeKewan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kategori.Jenis)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.KewanId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.KewanId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.KewanId })
+        </td>
+    </tr>
+}
+
+</table>

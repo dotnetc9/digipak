@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <title>@ViewBag.Title - Digital Pepak</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- attach CSS styles -->
+  <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+  <link href="~/Content/style.css" rel="stylesheet" />
+  <script src="~/Scripts/modernizr-2.6.2.js"></script>
+
+</head>
+<body>
+
+  <!--  BODY PAGE CONTENT -->
+
+    <!-- navigation panel -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Digital Pepak</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse-main">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#information">Quiz</a></li>
+            <li><a href="#google_map">Team</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- first section - Home -->
+    <div id="home" class="home">
+      <div class="text-vcenter">
+          <img src="~/Images/Layout/logodigipak2.gif" />
+        <h1>Digital Pepak</h1>
+        <h3>Sarana kageman sinau basa jawi online.</h3>
+        <a href="#about" class="btn btn-primary btn-lg">Continue</a>
+      </div>
+    </div>
+    <!-- /first section -->
+
+    <!-- second section - About -->
+    <div id="about" class="pad-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <div class="col-sm-6 text-center">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet.</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum metus et ligula venenatis, at rhoncus nisi molestie. Pellentesque porttitor elit suscipit massa laoreet metus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /second section -->
+
+    <!-- third section - Features -->
+    <div id="services" class="pad-section">
+      <div class="container">
+        <h2 class="text-center">Ayok Sinau!</h2> <hr />
+        <div class="row text-center">
+          <div class="col-sm-3 col-xs-6">
+            <i class="glyphicon glyphicon-asterisk"> </i>
+            <h4>@Html.ActionLink("Kewan",null,"KewanUser")</h4>
+            <p>Belajar istilah anak hewan</p>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <i class="glyphicon glyphicon-book"> </i>
+            <h4>@Html.ActionLink("Kawruh Basa",null,"KawruhBasaUser")</h4>
+            <p>Belajar mengenai Kawruh Basa Jawa</p>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <i class="glyphicon glyphicon-font"> </i>
+            <h4>@Html.ActionLink("Paramasastra",null,"ParamasastraUser")</h4>
+            <p>Blajar mengenai Paramasastra Jawa</p>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <i class="glyphicon glyphicon-text-width"> </i>
+            <h4>@Html.ActionLink("Paribasan",null,"ParibasanUser")</h4>
+            <p>Belajar mengenai Peribahasa Jawa</p>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <i class="glyphicon glyphicon-comment"> </i>
+            <h4>@Html.ActionLink("Parikan",null,"ParikanUser")</h4>
+            <p>Belajar Puisi Bahasa Jawa</p>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <i class="glyphicon glyphicon-header"> </i>
+            <h4>@Html.ActionLink("Hanacaraka",null,"HanacarakaUser")</h4>
+            <p>Belajar mengenal huruf Hanacaraka Jawa</p>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <i class="glyphicon glyphicon-picture"> </i>
+            <h4>@Html.ActionLink("Wayang",null,"WayangUser")</h4>
+            <p>Belajar mengenal tokoh pewayangan Jawa</p>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <i class="glyphicon glyphicon-gift"> </i>
+            <h4>@Html.ActionLink("Kuis",null,"Kuis")</h4>
+            <p>Kuis untuk menguji pemahamanmu mengenai semua materi Pepak Digital</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /third section -->
+
+    <!-- fourth section - Information -->
+    <div id="information" class="pad-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Translasi Bahasa Indonesia - Bahasa Jawa</h2>
+              </div>
+              <div class="panel-body lead">
+                Belajar mengenai Bahasa Jawa dengan melakukan translasi dari Bahasa Indonesia ke Bahasa Jawa dengan 3 variasi Bahasa Jawa Ngoko, Madya, dan Inggil.
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Translasi Bahasa Jawa - Bahasa Indonesia</h2>
+              </div>
+              <div class="panel-body lead">
+                Belajar mengenai Bahasa Indonesia dengan melakukan translasi dari Bahasa Jawa dengan 3 variasi Bahasa Jawa Ngoko, Madya, dan Inggil ke Bahasa Indonesia.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /fourth section -->
+
+    <!-- fifth section -->
+    <div id="services" class="pad-section">
+      <div class="container">
+        <div class="row">
+        <h2 class="text-center">Our Features</h2> <hr />
+            <div class="col-sm-3 col-xs-3">
+            <i class="glyphicon glyphicon-gift"> </i>
+            <h4>@Html.ActionLink("Translasi Bahasa Indonesia - Bahasa Jawa",null,"ParamasastraUserIndo")</h4>
+            <p>Kuis untuk menguji pemahamanmu mengenai semua materi Pepak Digital</p>
+          </div>
+            <div class="col-sm-3 col-xs-3">
+            <i class="glyphicon glyphicon-gift"> </i>
+            <h4>@Html.ActionLink("Translasi Bahasa Jawa - Bahasa Indonesia",null,"ParamasastraUserJawa")</h4>
+            <p>Kuis untuk menguji pemahamanmu mengenai semua materi Pepak Digital</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /fifth section -->
+
+    <!-- google map -->
+     @RenderBody()
+    <!-- /google map -->
+
+    <!-- footer -->
+    <footer>
+      <hr />
+      <div class="container">
+        <p class="text-center">&copy; @DateTime.Now.Year - Digital Pepak</p>
+      </div>
+    </footer>
+    <!-- /footer -->
+
+    
+
+  <!-- attach JavaScripts -->
+  <script src="~/Scripts/jquery-1.10.2.js"></script>
+  <script src="~/Scripts/bootstrap.min.js"></script>
+  <script src="//maps.google.com/maps/api/js?sensor=true"></script>
+  <script src="~/Scripts/main.js"></script>
+</body>
+</html>

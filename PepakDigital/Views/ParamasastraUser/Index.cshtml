@@ -1,0 +1,59 @@
+﻿@model PagedList.IPagedList<PepakDigital.Paramasastra>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+<br>
+<div class="col-md-6">
+		  <div class="panel panel-default">
+					  <div class="panel-heading"><h4>PARAMASASTRA</h4></div>
+						<div class="panel-body">
+							<table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            @Html.ActionLink("Ngoko", "Index", new { sortData = ViewBag.SortingName })
+                                            
+                                        </th>
+                                        <th>
+                                            Madya
+                                        </th>
+                                        <th>
+                                            Inggil
+                                        </th>
+                                        <th>
+                                            Indonesia
+                                        </th>
+       
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+
+                                <tbody>
+                                @foreach (var item in Model) {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Ngoko)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Madya)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Inggil)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Indonesia)
+                                        </td>
+                                    </tr>
+                                }
+                                </tbody>
+							</table>
+                            <br />
+                            Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+                            @Html.PagedListPager(Model, Page_No =>Url.Action("Index",
+                                new { Page_No, Sorting_Order= ViewBag.CurrentSortOrder, Filter_Value = ViewBag.FilterValue })) 
+ 
+						</div><!--/panel-body-->
+           </div><!--/panel-->

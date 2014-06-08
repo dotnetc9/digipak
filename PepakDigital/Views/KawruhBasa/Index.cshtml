@@ -1,0 +1,52 @@
+﻿@model IEnumerable<PepakDigital.KawruhBasa>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Tembung)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PodhoTegese)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KosokBalen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Kategori.Jenis)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tembung)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PodhoTegese)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KosokBalen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kategori.Jenis)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.KawruhBasaId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.KawruhBasaId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.KawruhBasaId })
+        </td>
+    </tr>
+}
+
+</table>

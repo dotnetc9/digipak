@@ -1,0 +1,49 @@
+﻿@model PepakDigital.Wayang
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Wayang</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.JenengWayang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JenengWayang)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GambarURL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GambarURL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kategori.Jenis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kategori.Jenis)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
