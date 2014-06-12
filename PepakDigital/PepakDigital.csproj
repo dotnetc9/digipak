@@ -124,6 +124,11 @@
       <LastGenOutput>DigitalPepak.cs</LastGenOutput>
     </Content>
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Images\aj.jpg" />
+    <Content Include="Images\ajeng.jpeg" />
+    <Content Include="Images\bila.jpg" />
+    <Content Include="Images\bila2.jpg" />
+    <Content Include="Images\nisa.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -272,7 +277,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

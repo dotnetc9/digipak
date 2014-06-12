@@ -32,10 +32,8 @@
         <div class="collapse navbar-collapse" id="navbar-collapse-main">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#information">Quiz</a></li>
-            <li><a href="#google_map">Team</a></li>
+            <li><a href="#information">About</a></li>
+            <li><a href="#services">Features</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -47,71 +45,67 @@
           <img src="~/Images/Layout/logodigipak2.gif" />
         <h1>Digital Pepak</h1>
         <h3>Sarana kageman sinau basa jawi online.</h3>
-        <a href="#about" class="btn btn-primary btn-lg">Continue</a>
+        <a href="#information" class="btn btn-primary btn-lg">Continue</a>
       </div>
     </div>
     <!-- /first section -->
 
-    <!-- second section - About -->
-    <div id="about" class="pad-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <img src="images/logo.png" alt="" />
-          </div>
-          <div class="col-sm-6 text-center">
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet.</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum metus et ligula venenatis, at rhoncus nisi molestie. Pellentesque porttitor elit suscipit massa laoreet metus.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /second section -->
+    
 
     <!-- third section - Features -->
     <div id="services" class="pad-section">
       <div class="container">
         <h2 class="text-center">Ayok Sinau!</h2> <hr />
         <div class="row text-center">
-          <div class="col-sm-3 col-xs-6">
+          <div class="col-sm-6 col-xs-6 col-md-3 col-lg-3">
             <i class="glyphicon glyphicon-asterisk"> </i>
             <h4>@Html.ActionLink("Kewan",null,"KewanUser")</h4>
             <p>Belajar istilah anak hewan</p>
           </div>
-          <div class="col-sm-3 col-xs-6">
+          <div class="col-sm-6 col-xs-6 col-md-3 col-lg-3">
             <i class="glyphicon glyphicon-book"> </i>
             <h4>@Html.ActionLink("Kawruh Basa",null,"KawruhBasaUser")</h4>
             <p>Belajar mengenai Kawruh Basa Jawa</p>
           </div>
-          <div class="col-sm-3 col-xs-6">
+          <div class="col-sm-6 col-xs-6 col-md-3 col-lg-3">
             <i class="glyphicon glyphicon-font"> </i>
             <h4>@Html.ActionLink("Paramasastra",null,"ParamasastraUser")</h4>
             <p>Blajar mengenai Paramasastra Jawa</p>
           </div>
-          <div class="col-sm-3 col-xs-6">
+          <div class="col-sm-6 col-xs-6 col-md-3 col-lg-3">
             <i class="glyphicon glyphicon-text-width"> </i>
             <h4>@Html.ActionLink("Paribasan",null,"ParibasanUser")</h4>
             <p>Belajar mengenai Peribahasa Jawa</p>
           </div>
-          <div class="col-sm-3 col-xs-6">
+          <div class="col-sm-6 col-xs-6 col-md-3 col-lg-3">
             <i class="glyphicon glyphicon-comment"> </i>
             <h4>@Html.ActionLink("Parikan",null,"ParikanUser")</h4>
             <p>Belajar Puisi Bahasa Jawa</p>
           </div>
-          <div class="col-sm-3 col-xs-6">
+          <div class="col-sm-6 col-xs-6 col-md-3 col-lg-3">
             <i class="glyphicon glyphicon-header"> </i>
             <h4>@Html.ActionLink("Hanacaraka",null,"HanacarakaUser")</h4>
             <p>Belajar mengenal huruf Hanacaraka Jawa</p>
           </div>
-          <div class="col-sm-3 col-xs-6">
+          <div class="col-sm-6 col-xs-6 col-md-3 col-lg-3">
             <i class="glyphicon glyphicon-picture"> </i>
             <h4>@Html.ActionLink("Wayang",null,"WayangUser")</h4>
             <p>Belajar mengenal tokoh pewayangan Jawa</p>
           </div>
-          <div class="col-sm-3 col-xs-6">
+          <div class="col-sm-6 col-xs-6 col-md-3 col-lg-3">
             <i class="glyphicon glyphicon-gift"> </i>
             <h4>@Html.ActionLink("Kuis",null,"Kuis")</h4>
             <p>Kuis untuk menguji pemahamanmu mengenai semua materi Pepak Digital</p>
+          </div>
+          <div class="col-sm-6 col-xs-6 col-md-3 col-lg-6">
+            <i class="glyphicon glyphicon-cloud-download"> </i>
+            <h4>@Html.ActionLink("Translasi Bahasa Indonesia - Bahasa Jawa",null,"ParamasastraUserIndo")</h4>
+            <p>Belajar mengenai Bahasa Jawa dengan melakukan translasi dari Bahasa Indonesia ke Bahasa Jawa dengan 3 variasi Bahasa Jawa Ngoko, Madya, dan Inggil.</p>
+          </div>
+         <div class="col-sm-6 col-xs-6 col-md-3 col-lg-6">
+            <i class="glyphicon glyphicon-cloud-upload"> </i>
+            <h4>@Html.ActionLink("Translasi Bahasa Jawa - Bahasa Indonesia",null,"ParamasastraUserJawa")</h4>
+            <p>Belajar mengenai Bahasa Indonesia dengan melakukan translasi dari Bahasa Jawa dengan 3 variasi Bahasa Jawa Ngoko, Madya, dan Inggil ke Bahasa Indonesia.</p>
           </div>
         </div>
       </div>
@@ -122,25 +116,12 @@
     <div id="information" class="pad-section">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h2 class="panel-title">Translasi Bahasa Indonesia - Bahasa Jawa</h2>
-              </div>
-              <div class="panel-body lead">
-                Belajar mengenai Bahasa Jawa dengan melakukan translasi dari Bahasa Indonesia ke Bahasa Jawa dengan 3 variasi Bahasa Jawa Ngoko, Madya, dan Inggil.
-              </div>
+            <div class="col-sm-6">
+                <img src="~/Images/Layout/logodigipak2.gif" alt="" />
             </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h2 class="panel-title">Translasi Bahasa Jawa - Bahasa Indonesia</h2>
-              </div>
-              <div class="panel-body lead">
-                Belajar mengenai Bahasa Indonesia dengan melakukan translasi dari Bahasa Jawa dengan 3 variasi Bahasa Jawa Ngoko, Madya, dan Inggil ke Bahasa Indonesia.
-              </div>
-            </div>
+                <div class="col-sm-6 text-center">
+                <h2>Digital Pepak adalah sebuah media belajar bahasa Jawa yang interaktif dan informatif.</h2>
+                <p class="lead">Digital Pepak menika blablabla ~</p>
           </div>
         </div>
       </div>
@@ -151,18 +132,41 @@
     <div id="services" class="pad-section">
       <div class="container">
         <div class="row">
-        <h2 class="text-center">Our Features</h2> <hr />
-            <div class="col-sm-3 col-xs-3">
-            <i class="glyphicon glyphicon-gift"> </i>
-            <h4>@Html.ActionLink("Translasi Bahasa Indonesia - Bahasa Jawa",null,"ParamasastraUserIndo")</h4>
-            <p>Kuis untuk menguji pemahamanmu mengenai semua materi Pepak Digital</p>
-          </div>
-            <div class="col-sm-3 col-xs-3">
-            <i class="glyphicon glyphicon-gift"> </i>
-            <h4>@Html.ActionLink("Translasi Bahasa Jawa - Bahasa Indonesia",null,"ParamasastraUserJawa")</h4>
-            <p>Kuis untuk menguji pemahamanmu mengenai semua materi Pepak Digital</p>
-          </div>
+        <h2 class="text-center">Our Team</h2> <hr />
+		    <div class="col-xs-4">
+			    <center>
+			    <a href="#" class="circular">
+				    <img src="~/Images/bila2.jpg"  class="img-circle" alt="Circular Image">
+			    </a>
+			    <br>
+			    <p><b>Nabilla Sabbaha</b></p>
+			    <p>51111000015</p>
+			    </center>
+		    </div>
+		    <div class="col-xs-4">
+			    <center>
+			    <a href="#" class="circular">
+				    <img src="~/Images/aj.jpg"  class="img-circle" alt="Circular Image">
+			    </a>
+			    <br>
+			    <p><b>Anggarda Diajeng</b></p>
+			    <p>5111100126</p>
+			    </center>
+		    </div>
+		    <div class="col-xs-4">
+			    <center>
+			    <a href="#" class="circular">
+				    <img src="~/Images/nisa.jpg"  class="img-circle" alt="Circular Image">
+			    </a>
+			    <br>
+			    <p><b>Shabrinna Choirunissa</b></p>
+			    <p>511110000</p>
+			    </center>
+		    </div>
         </div>
+          <div class="row">
+             <h4 class="text-center"><a href="https://github.com/dotnetc9/">https://github.com/dotnetc9/</a></h4>
+          </div>
       </div>
     </div>
     <!-- /fifth section -->
