@@ -2,47 +2,44 @@
 
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+    Layout = "~/Views/Shared/_LayoutwithSidebar.cshtml";
 }
 
-<h2>Index</h2>
-
-
-<div class="col-md-6">
-		  <div class="panel panel-default">
-					  <div class="panel-heading"><h4>KAWRUH BASA</h4></div>
-						<div class="panel-body">
-
-<table class="table table-striped">
-  <thead>
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Tembung)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PodhoTegese)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.KosokBalen)
-        </th>
-    </tr>
-   </thead>
-<tbody>
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Tembung)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PodhoTegese)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.KosokBalen)
-        </td>
-    </tr>
-}
-</tbody>
-</table>
-</div>
+<br />
+<div class="col-lg-15">
+		<div class="panel panel-primary">
+		<div class="panel-heading"><center><h4>Kawruh Basa</h4></center></div>
+		<div class="panel-body">
+            <table class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Tembung)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PodhoTegese)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.KosokBalen)
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var item in Model) {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Tembung)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PodhoTegese)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.KosokBalen)
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
     </div><!--/panel-body-->
-           </div><!--/panel-->
+</div><!--/panel-->

@@ -2,37 +2,34 @@
 
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+    Layout = "~/Views/Shared/_LayoutwithSidebar.cshtml";
 }
 
-
-
-<div class="col-md-6">
-		  <div class="panel panel-default">
-					  <div class="panel-heading"><h4>PARIKAN</h4></div>
-						<div class="panel-body">
-							<table class="table table-striped">
-<thead>
-        <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.IsiParikan)
-        </th>
+<br />
+<div class="col-lg-15">
+		  <div class="panel panel-primary">
+			<div class="panel-heading"><center><h4>Parikan</h4></center></div>
+			<div class="panel-body">
+				<table class="table table-striped table-hover">
+                <thead>
+                        <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.IsiParikan)
+                        </th>
        
-        <th></th>
-    </tr>
-  </thead>
- <tbody>
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.IsiParikan)
-        </td>
+                        <th></th>
+                    </tr>
+                 </thead>
+                 <tbody>
+                @foreach (var item in Model) {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.IsiParikan)
+                        </td>
         
-    </tr>
-}
-
-</table>
-                   	</tbody>
-							</table>
-						</div><!--/panel-body-->
-           </div><!--/panel-->
+                    </tr>
+                }
+                </tbody>
+				</table>
+		    </div><!--/panel-body-->
+</div><!--/panel-->

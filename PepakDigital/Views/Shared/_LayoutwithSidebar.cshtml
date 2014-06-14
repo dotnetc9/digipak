@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Digital Pepak</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <style type="text/css">
+        body {
+          padding-top: 51px;  
+        }
+        .text-center {
+          padding-top: 20px;
+        }
+        .col-xs-12 {
+          background-color: #fff;
+        }
+        #sidebar {
+          height: 100%;
+          padding-right: 0;
+          padding-top: 20px;
+        }
+        #sidebar .nav {
+          width: 95%;
+        }
+        #sidebar li {
+          border:0 #f2f2f2 solid;
+          border-bottom-width:1px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Start of Navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Digital Pepak", "Index", "Home", null, new { @class = "navbar-brand" })
+            </div>
+            
+        </div>
+    </div>
+    <!-- End of Navbar -->
+
+
+    <div class="page-container">  
+   <center>
+       <br />
+   </center>
+    <div class="container">
+      <div class="row row-offcanvas row-offcanvas-left">
+        <br />
+           
+        <!-- sidebar -->
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+            <ul class="nav">
+              <li style="background-color:#ff6a00;"  class="active"><a href="#">Home</a></li>
+              <li style="background-color:#ff6a00;" ><a href="#">Kewan</a></li>
+              <li style="background-color:#ff6a00;" ><a href="#">Kawruh Basa</a></li>
+              <li style="background-color:#ff6a00;" ><a href="#">Paramastra</a></li>              
+                <li style="background-color:#ff6a00;" ><a href="#">Paribasan</a></li>
+                <li style="background-color:#ff6a00;" ><a href="#">Parikan</a></li>
+                <li style="background-color:#ff6a00;" ><a href="#">Hanacaraka</a></li>
+                <li style="background-color:#ff6a00;" ><a href="#">Wayang</a></li>
+                <li style="background-color:#ff6a00;" ><a href="#">Kuis</a></li>
+                <li style="background-color:#ff6a00;" ><a href="#">Translasi Indonesia</a></li>
+                <li style="background-color:#ff6a00;" ><a href="#">Translas Jawa</a></li>
+            </ul>
+        </div>
+  	
+        <!-- main area -->
+        <div class="col-xs-12 col-sm-9">
+          @RenderBody()
+          
+        </div><!-- /.col-xs-12 main -->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</div><!--/.page-container-->
+
+    <div class="container body-content">
+        
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - .NET Kel.9</p>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle=offcanvas]').click(function () {
+                $('.row-offcanvas').toggleClass('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

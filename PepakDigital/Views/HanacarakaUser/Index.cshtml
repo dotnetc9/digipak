@@ -1,30 +1,31 @@
 ﻿@model IEnumerable<PepakDigital.Hanacaraka>
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+    Layout = "~/Views/Shared/_LayouwithSidebar.cshtml";
 }
 
-<div class="col-md-6">
-		  <div class="panel panel-default">
-					  <div class="panel-heading"><h4>HANACARAKA</h4></div>
-						<div class="panel-body">
-							<table class="table table-striped">
-							<thead>
-								<tr><th>Hanacaraka</th><th>Gambar</th></tr>
-							</thead>
-							<tbody>
-								@foreach (var item in Model) {
-                                    <tr>
-                                        <td>
-                                            @Html.DisplayFor(modelItem => item.Aksara)
-                                        </td>
-                                        <td>
-                                            <img alt="Gambar" src= "@string.Format("{0}",item.GambarURL)" />
-                                        </td>
-                                    </tr>
-                                }
-							</tbody>
-							</table>
-                           </div>
-						</div><!--/panel-body-->
-           </div><!--/panel-->
+<br />
+<div class="col-lg-15">
+        <div class="panel panel-primary">
+			<div class="panel-heading"><center><h4>Hanacaraka</h4></center></div>
+			<div class="panel-body">
+				<table class="table table-striped table-hover">
+				<thead>
+					<tr><th>Hanacaraka</th><th>Gambar</th></tr>
+				</thead>
+				<tbody>
+					@foreach (var item in Model) {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Aksara)
+                            </td>
+                            <td>
+                                <img alt="Gambar" src= "@string.Format("{0}",item.GambarURL)" />
+                            </td>
+                        </tr>
+                    }
+				</tbody>
+				</table>
+                </div>
+		</div><!--/panel-body-->
+</div><!--/panel-->
