@@ -144,6 +144,8 @@
     <Property Name="SoalId" Type="int" Nullable="false" />
     <Property Name="KategoriId" Type="int" />
     <Property Name="Score" Type="int" />
+    <Property Name="Pertanyaan" Type="nchar" MaxLength="10" />
+    <Property Name="Jawaban" Type="nchar" MaxLength="10" />
   </EntityType>
   <EntityType Name="UserDigipak">
     <Key>
@@ -152,6 +154,7 @@
     <Property Name="UserId" Type="int" Nullable="false" />
     <Property Name="Username" Type="varchar" MaxLength="50" />
     <Property Name="Password" Type="varchar" MaxLength="32" />
+    <Property Name="Session" Type="nchar" MaxLength="10" />
   </EntityType>
   <EntityType Name="Wayang">
     <Key>

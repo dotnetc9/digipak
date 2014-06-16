@@ -141,10 +141,13 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HanacarakaController.cs" />
     <Compile Include="Controllers\HanacarakaUserController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -153,6 +156,8 @@
     <Compile Include="Controllers\KawruhBasaUserController.cs" />
     <Compile Include="Controllers\KewanController.cs" />
     <Compile Include="Controllers\KewanUserController.cs" />
+    <Compile Include="Controllers\LoginAdminController.cs" />
+    <Compile Include="Controllers\LogoutController.cs" />
     <Compile Include="Controllers\ParamasastraController.cs" />
     <Compile Include="Controllers\ParamasastraUserController.cs" />
     <Compile Include="Controllers\ParamasastraUserIndoController.cs" />
@@ -273,6 +278,11 @@
     <Content Include="Views\ParamasastraUserIndo\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutwithSidebar.cshtml" />
     <Content Include="Views\HomeUser\Index.cshtml" />
+    <Content Include="Views\LoginAdmin\Index.cshtml" />
+    <Content Include="Views\LoginAdmin\EmployeeSection.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\Logout\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -67,6 +67,6 @@ E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\System.Web.Webpages.Deploym
 E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\System.Web.Webpages.Razor.xml
 E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\System.Web.Helpers.xml
 E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\System.Web.Mvc.xml
-E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\obj\Debug\PepakDigital.csprojResolveAssemblyReference.cache
 E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\obj\Debug\PepakDigital.dll
 E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\obj\Debug\PepakDigital.pdb
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\obj\Debug\PepakDigital.csprojResolveAssemblyReference.cache

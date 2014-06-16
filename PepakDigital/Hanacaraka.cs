@@ -20,16 +20,5 @@ namespace PepakDigital
         public Nullable<int> KategoriId { get; set; }
     
         public virtual Kategori Kategori { get; set; }
-
-        public Hanacaraka()
-        { 
-        }
-
-        public Hanacaraka(int hanId, string aksara, string gambarUrl)
-        {
-            HanacarakaId = hanId;
-            Aksara = aksara;
-            GambarURL = gambarUrl;
-        }
     }
 }

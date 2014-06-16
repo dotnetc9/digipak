@@ -22,6 +22,8 @@ namespace PepakDigital
         public int SoalId { get; set; }
         public Nullable<int> KategoriId { get; set; }
         public Nullable<int> Score { get; set; }
+        public string Pertanyaan { get; set; }
+        public string Jawaban { get; set; }
     
         public virtual ICollection<DetailKuis> DetailKuis { get; set; }
         public virtual Kategori Kategori { get; set; }

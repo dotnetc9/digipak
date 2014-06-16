@@ -22,6 +22,7 @@ namespace PepakDigital
         public int UserId { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
+        public string Session { get; set; }
     
         public virtual ICollection<Kuis> Kuis { get; set; }
     }

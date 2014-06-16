@@ -1,0 +1,20 @@
+﻿@model PepakDigital.UserDigipak
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<link href="~/Content/signin.css" rel="stylesheet" type="text/css" />
+
+<div class="container">
+      @using(Html.BeginForm ("Index","LoginAdmin"))
+      {
+        <center>@Html.TextBoxFor(m => m.Username)</center>
+        <br /><br />
+        <center>@Html.PasswordFor(m => m.Password)</center>
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" id="btnLogin" type="submit">Login</button>
+      }
+</div> <!-- /container -->

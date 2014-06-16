@@ -176,6 +176,8 @@
     <Property Name="Score" Type="Int32" />
     <NavigationProperty Name="DetailKuis" Relationship="DigitalPepakModel.FK_DetailKuis_Soal" FromRole="Soal" ToRole="DetailKuis" />
     <NavigationProperty Name="Kategori" Relationship="DigitalPepakModel.FK_Soal_Kategori" FromRole="Soal" ToRole="Kategori" />
+    <Property Type="String" Name="Pertanyaan" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Jawaban" MaxLength="10" FixedLength="true" Unicode="true" />
   </EntityType>
   <EntityType Name="UserDigipak">
     <Key>
@@ -185,6 +187,7 @@
     <Property Name="Username" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
     <Property Name="Password" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
     <NavigationProperty Name="Kuis" Relationship="DigitalPepakModel.FK_Kuis_UserDigipak" FromRole="UserDigipak" ToRole="Kuis" />
+    <Property Type="String" Name="Session" MaxLength="10" FixedLength="true" Unicode="true" />
   </EntityType>
   <EntityType Name="Wayang">
     <Key>

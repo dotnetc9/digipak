@@ -20,16 +20,5 @@ namespace PepakDigital
         public Nullable<int> KategoriId { get; set; }
     
         public virtual Kategori Kategori { get; set; }
-
-        public Kewan()
-        { 
-        }
-
-        public Kewan(int kewId, string jenengKew, string anakKew)
-        {
-            KewanId = kewId;
-            JenengKewan = jenengKew;
-            AnakeKewan = anakKew;
-        }
     }
 }

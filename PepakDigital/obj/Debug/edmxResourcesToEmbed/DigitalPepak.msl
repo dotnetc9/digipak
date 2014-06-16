@@ -92,6 +92,8 @@
     <EntitySetMapping Name="Soal">
       <EntityTypeMapping TypeName="DigitalPepakModel.Soal">
         <MappingFragment StoreEntitySet="Soal">
+          <ScalarProperty Name="Jawaban" ColumnName="Jawaban" />
+          <ScalarProperty Name="Pertanyaan" ColumnName="Pertanyaan" />
           <ScalarProperty Name="SoalId" ColumnName="SoalId" />
           <ScalarProperty Name="KategoriId" ColumnName="KategoriId" />
           <ScalarProperty Name="Score" ColumnName="Score" />
@@ -101,6 +103,7 @@
     <EntitySetMapping Name="UserDigipak">
       <EntityTypeMapping TypeName="DigitalPepakModel.UserDigipak">
         <MappingFragment StoreEntitySet="UserDigipak">
+          <ScalarProperty Name="Session" ColumnName="Session" />
           <ScalarProperty Name="UserId" ColumnName="UserId" />
           <ScalarProperty Name="Username" ColumnName="Username" />
           <ScalarProperty Name="Password" ColumnName="Password" />

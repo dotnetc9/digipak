@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/dashboard.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Digital Pepak</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>@Html.ActionLink("Log Out",null, "LoginAdmin")</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+        <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active">@Html.ActionLink("Overview",null, "Admin")</li>
+            <li>@Html.ActionLink("Kewan",null, "Kewan")</li>
+            <li>@Html.ActionLink("Kawruh Basa",null, "KawruhBasa")</li>
+            <li>@Html.ActionLink("Paramasastra",null, "Paramasastra")</li>
+            <li>@Html.ActionLink("Paribasan",null, "Paribasan")</li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li>@Html.ActionLink("Parikan",null, "Parikan")</li>
+            <li>@Html.ActionLink("Hanacaraka",null, "Hanacaraka")</li>
+            <li>@Html.ActionLink("Wayang",null, "Wayang")</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        @RenderBody()
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
