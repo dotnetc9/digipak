@@ -15,9 +15,6 @@
         <th>
             @Html.DisplayNameFor(model => model.IsiParikan)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Kategori.Jenis)
-        </th>
         <th></th>
     </tr>
 
@@ -27,11 +24,7 @@
             @Html.DisplayFor(modelItem => item.IsiParikan)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Kategori.Jenis)
-        </td>
-        <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ParikanId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ParikanId }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.ParikanId })
         </td>
     </tr>

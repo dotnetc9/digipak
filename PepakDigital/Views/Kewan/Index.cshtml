@@ -18,9 +18,6 @@
         <th>
             @Html.DisplayNameFor(model => model.AnakeKewan)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Kategori.Jenis)
-        </th>
         <th></th>
     </tr>
 
@@ -33,11 +30,7 @@
             @Html.DisplayFor(modelItem => item.AnakeKewan)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Kategori.Jenis)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.KewanId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.KewanId }) |
+            @Html.ActionLink("Edit", "Edit", new { id=item.KewanId, @class="btn btn-link" }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.KewanId })
         </td>
     </tr>

@@ -1,20 +1,32 @@
 ﻿@model PepakDigital.UserDigipak
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Login";
     Layout = "~/Views/Shared/_LayoutUser.cshtml";
 }
 
 <link href="~/Content/signin.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
 <div class="container">
+    
       @using(Html.BeginForm ("Index","LoginAdmin"))
       {
-        <center>@Html.TextBoxFor(m => m.Username)</center>
-        <br /><br />
-        <center>@Html.PasswordFor(m => m.Password)</center>
-        <label class="checkbox">
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-        <button class="btn btn-lg btn-primary btn-block" id="btnLogin" type="submit">Login</button>
-      }
+          <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 col-lg-15 col-lg-offset-4 main">
+        <br /><br /><br /><br /><br /><br />
+        <h2 class="form-signin-heading">Please Sign In</h2>
+            @Html.TextBoxFor(m => m.Username, new { @Placeholder = " Username", @class="form-control"})    
+            <br />
+                @Html.PasswordFor(m => m.Password, new { @Placeholder = " Password", @class="form-control"})
+            <label class="checkbox">
+                <input type="checkbox" value="remember-me"><h5>Remember me</h5>
+            </label>
+        <button class="btn btn-lg btn-primary" style="width:280px;" id="btnLogin" type="submit">Login</button>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          </div>
+              
+              }
+
+    
+
 </div> <!-- /container -->

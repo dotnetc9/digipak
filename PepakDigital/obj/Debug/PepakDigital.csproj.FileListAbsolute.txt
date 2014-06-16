@@ -70,3 +70,27 @@ E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\System.Web.Mvc.xml
 E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\obj\Debug\PepakDigital.dll
 E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\obj\Debug\PepakDigital.pdb
 E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\obj\Debug\PepakDigital.csprojResolveAssemblyReference.cache
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\bin\PepakDigital.dll
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\bin\PepakDigital.pdb
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\bin\EntityFramework.dll
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\bin\PagedList.dll
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\bin\PagedList.Mvc.dll
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\bin\System.Web.Helpers.dll
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\bin\System.Web.Mvc.dll
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\bin\System.Web.Razor.dll
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\bin\System.Web.Webpages.dll
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\bin\System.Web.Webpages.Razor.dll
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\bin\EntityFramework.xml
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\bin\PagedList.xml
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\bin\PagedList.Mvc.xml
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\bin\System.Web.Razor.xml
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\bin\System.Web.Webpages.xml
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\bin\System.Web.Webpages.Razor.xml
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\bin\System.Web.Helpers.xml
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\bin\System.Web.Mvc.xml
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\obj\Debug\PepakDigital.csprojResolveAssemblyReference.cache
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\obj\Debug\PepakDigital.dll
+C:\Users\Public\Documents\Kuliah\NET\FP FIX\PepakDigital\obj\Debug\PepakDigital.pdb

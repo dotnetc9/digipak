@@ -24,9 +24,6 @@
         <th>
             @Html.DisplayNameFor(model => model.Indonesia)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Kategori.Jenis)
-        </th>
         <th></th>
     </tr>
 
@@ -45,11 +42,7 @@
             @Html.DisplayFor(modelItem => item.Indonesia)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Kategori.Jenis)
-        </td>
-        <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ParamasastraId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ParamasastraId }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.ParamasastraId })
         </td>
     </tr>

@@ -1,17 +1,21 @@
 ﻿@model IEnumerable<PepakDigital.Paramasastra>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Translasi Indonesia - Jawa";
     Layout = "~/Views/Shared/_LayoutwithSidebar.cshtml";
 }
 
-<br><br>
 @using (Html.BeginForm())
 {
-    <p>
-        <b>Cari Kata : </b> @Html.TextBox("cariData", ViewBag.FilterValue as string)
-        <input type="submit" class="btn btn-primary" value="temukan" />
-    </p>
+    <h2>Cari kata:</h2>
+    <div class="input-group">
+         @Html.TextBox("cariData", ViewBag.FilterValue as string, new { @Placeholder = " Ketikkan kata Bahasa Indonesia", @class ="form-control", @style = "max-width:100%;"})
+    <span class="input-group-btn">
+        <input type="submit" class="btn btn-primary" value="Temukan" />
+    </span>
+    </div>
+    <br />
+        
 }
 
 <div class="col-lg-15">

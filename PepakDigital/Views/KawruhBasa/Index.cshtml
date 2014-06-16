@@ -21,9 +21,6 @@
         <th>
             @Html.DisplayNameFor(model => model.KosokBalen)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Kategori.Jenis)
-        </th>
         <th></th>
     </tr>
 
@@ -39,11 +36,7 @@
             @Html.DisplayFor(modelItem => item.KosokBalen)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Kategori.Jenis)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.KawruhBasaId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.KawruhBasaId }) |
+            @Html.ActionLink("Edit", "Edit", new { id=item.KawruhBasaId }) | 
             @Html.ActionLink("Delete", "Delete", new { id=item.KawruhBasaId })
         </td>
             
