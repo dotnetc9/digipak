@@ -46,3 +46,27 @@ C:\Users\Public\Documents\Kuliah\NET\Final Digipak\PepakDigital\bin\System.Web.M
 C:\Users\Public\Documents\Kuliah\NET\Final Digipak\PepakDigital\obj\Debug\PepakDigital.csprojResolveAssemblyReference.cache
 C:\Users\Public\Documents\Kuliah\NET\Final Digipak\PepakDigital\obj\Debug\PepakDigital.dll
 C:\Users\Public\Documents\Kuliah\NET\Final Digipak\PepakDigital\obj\Debug\PepakDigital.pdb
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\PepakDigital.dll
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\PepakDigital.pdb
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\EntityFramework.dll
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\Microsoft.Web.Infrastructure.dll
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\PagedList.dll
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\PagedList.Mvc.dll
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\System.Web.Helpers.dll
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\System.Web.Mvc.dll
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\System.Web.Razor.dll
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\System.Web.Webpages.Deployment.dll
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\System.Web.Webpages.dll
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\System.Web.Webpages.Razor.dll
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\EntityFramework.xml
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\PagedList.xml
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\PagedList.Mvc.xml
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\System.Web.Razor.xml
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\System.Web.Webpages.xml
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\System.Web.Webpages.Deployment.xml
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\System.Web.Webpages.Razor.xml
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\System.Web.Helpers.xml
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\bin\System.Web.Mvc.xml
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\obj\Debug\PepakDigital.csprojResolveAssemblyReference.cache
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\obj\Debug\PepakDigital.dll
+E:\Praktikum Semester 6\NET\Pepakv2\PepakDigital\obj\Debug\PepakDigital.pdb

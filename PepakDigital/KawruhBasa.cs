@@ -22,6 +22,10 @@ namespace PepakDigital
     
         public virtual Kategori Kategori { get; set; }
 
+        public KawruhBasa()
+        { 
+        }
+
         public KawruhBasa(int kawruhBasaId, string tembung, string podhoTegese, string kosokBalen)
         {
             KawruhBasaId = kawruhBasaId;

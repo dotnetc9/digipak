@@ -148,6 +148,7 @@
     <Compile Include="Controllers\HanacarakaController.cs" />
     <Compile Include="Controllers\HanacarakaUserController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HomeUserController.cs" />
     <Compile Include="Controllers\KawruhBasaController.cs" />
     <Compile Include="Controllers\KawruhBasaUserController.cs" />
     <Compile Include="Controllers\KewanController.cs" />
@@ -271,6 +272,7 @@
     <Content Include="Views\ParamasastraUserJawa\Index.cshtml" />
     <Content Include="Views\ParamasastraUserIndo\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutwithSidebar.cshtml" />
+    <Content Include="Views\HomeUser\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

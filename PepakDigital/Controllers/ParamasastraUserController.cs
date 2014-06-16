@@ -21,7 +21,6 @@ namespace PepakDigital.Controllers
             ViewBag.CurrentSortOrder = sortData;
             ViewBag.SortingName = String.IsNullOrEmpty(sortData) ? "Urut_Ngoko" : "";
             var paramasastra = db.Paramasastra.Include(p => p.Kategori);
-
             switch (sortData)
             {
                 case "Urut_Ngoko":

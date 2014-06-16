@@ -16,13 +16,12 @@ namespace PepakDigital.Controllers
         private DigitalPepakEntities db = new DigitalPepakEntities();
 
         // GET: /KewanUser/
-        public ActionResult Index()
+        public ActionResult Index(string sortData, string Filter_Value, int? Page_No)
         {
-        //    ViewBag.CurrentSortOrder = sortData;
-          //  ViewBag.SortingName = String.IsNullOrEmpty(sortData) ? "Urut_Kewan" : "";
+            ViewBag.CurrentSortOrder = sortData;
+            ViewBag.SortingName = String.IsNullOrEmpty(sortData) ? "Urut_Kewan" : "";
             var kewan = db.Kewan.Include(k => k.Kategori);
-            return View(kewan.ToList());
-            /*
+            
             switch (sortData)
             {
                 case "Urut_Kewan":
@@ -35,8 +34,7 @@ namespace PepakDigital.Controllers
 
             int Size_Of_Page = 10;
             int No_Of_Page = (Page_No ?? 1);
-            return View(kewan.ToPagedList(No_Of_Page, Size_Of_Page));
-            */
+            return View(kewan.ToPagedList(No_Of_Page, Size_Of_Page));       
         }
 
             

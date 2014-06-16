@@ -21,6 +21,10 @@ namespace PepakDigital
     
         public virtual Kategori Kategori { get; set; }
 
+        public Hanacaraka()
+        { 
+        }
+
         public Hanacaraka(int hanId, string aksara, string gambarUrl)
         {
             HanacarakaId = hanId;

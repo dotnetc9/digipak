@@ -22,6 +22,11 @@ namespace PepakDigital
         public Nullable<int> KategoriId { get; set; }
     
         public virtual Kategori Kategori { get; set; }
+
+        public Paramasastra()
+        { 
+        }
+
         public Paramasastra(int paramId,string ngoko, string madya, string inggil, string indonesia)
         {
             ParamasastraId = paramId;

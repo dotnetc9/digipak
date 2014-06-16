@@ -20,6 +20,11 @@ namespace PepakDigital
         public Nullable<int> KategoriId { get; set; }
     
         public virtual Kategori Kategori { get; set; }
+
+        public Wayang()
+        {
+        }
+
         public Wayang(int wayangId, string jeneng)
         {
             WayangId = wayangId;

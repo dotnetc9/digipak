@@ -3,16 +3,16 @@
 <link href="~/Content/PagedList.css" rel="stylesheet" />
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+    Layout = "~/Views/Shared/_LayoutwithSidebar.cshtml";
 }
 <br>
-<div class="col-md-6">
-	<div class="panel panel-default">
-	 
+<div class="col-lg-18">
+	<div class="panel panel-primary">
+	<div class="panel-heading"><center><h4>Paramasastra</h4></center></div>
 	<div class="panel-body">
 		<table class="table table-striped">
             <thead>
-                <tr>
+                <center><tr>
                     <th>
                        @Html.ActionLink("Ngoko", "Index", new { sortData = ViewBag.SortingName })                  
                     </th>
@@ -25,14 +25,12 @@
                     <th>
                         Indonesia
                     </th>
-       
-                    <th></th>
-                </tr>
+                </tr></center>
                 </thead>
 
             <tbody>
             @foreach (var item in Model) {
-                <tr>
+                <tr><center>
                     <td>
                         @Html.DisplayFor(modelItem => item.Ngoko)
                     </td>
@@ -45,7 +43,7 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.Indonesia)
                     </td>
-                </tr>
+                </center></tr>
             }
             </tbody>
 		</table>

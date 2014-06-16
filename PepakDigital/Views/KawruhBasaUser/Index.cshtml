@@ -1,5 +1,6 @@
-﻿@model IEnumerable<PepakDigital.KawruhBasa>
-
+﻿@model PagedList.IPagedList<PepakDigital.KawruhBasa>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" />
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutwithSidebar.cshtml";
@@ -14,13 +15,13 @@
                 <thead>
                 <tr>
                     <th>
-                        @Html.DisplayNameFor(model => model.Tembung)
+                        Tembung
                     </th>
                     <th>
-                        @Html.DisplayNameFor(model => model.PodhoTegese)
+                        Podho Tegese (Persamaan Kata)
                     </th>
                     <th>
-                        @Html.DisplayNameFor(model => model.KosokBalen)
+                        Kosok Balen (Lawan Kata)
                     </th>
                 </tr>
                 </thead>
@@ -41,5 +42,8 @@
                 </tbody>
             </table>
         </div>
+         Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+         @Html.PagedListPager(Model, Page_No =>Url.Action("Index",
+         new { Page_No, Sorting_Order= ViewBag.CurrentSortOrder, Filter_Value = ViewBag.FilterValue })) 
     </div><!--/panel-body-->
 </div><!--/panel-->

@@ -2,21 +2,21 @@
 
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+    Layout = "~/Views/Shared/_LayoutwithSidebar.cshtml";
 }
 
 <br><br>
 @using (Html.BeginForm())
 {
     <p>
-        Cari Kata : @Html.TextBox("cariData", ViewBag.FilterValue as string)
-        <input type="submit" value="Find" />
+        <b>Cari Kata : </b> @Html.TextBox("cariData", ViewBag.FilterValue as string)
+        <input type="submit" class="btn btn-primary" value="temukan" />
     </p>
 }
 
-<div class="col-md-6">
-		  <div class="panel panel-default">
-					  <div class="panel-heading"><h4>PARAMASASTRA</h4></div>
+<div class="col-lg-15">
+		  <div class="panel panel-primary">
+					  <div class="panel-heading"><center><h4>TRANSLASI INDONESIA - JAWA</h4></center></div>
 						<div class="panel-body">
 							<table class="table table-striped">
                                 <thead>
